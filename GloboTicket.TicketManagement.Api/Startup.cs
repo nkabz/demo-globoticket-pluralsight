@@ -53,6 +53,7 @@ namespace GloboTicket.TicketManagement.Api
             {
                 endpoints.MapControllers();
             });
+            
         }
     }
 }

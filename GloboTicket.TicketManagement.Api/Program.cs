@@ -2,8 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GloboTicket.TicketManagement.Persistence;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
@@ -13,6 +16,17 @@ namespace GloboTicket.TicketManagement.Api
     {
         public static void Main(string[] args)
         {
+            var host = CreateHostBuilder(args).Build();
+
+            using (var scope = host.Services.CreateScope())
+            {
+                var context = scope.ServiceProvider.GetRequiredService<GloboTicketDbContext>();
+                
+                if (context.Database.GetPendingMigrations().Any()) {
+                    context.Database.Migrate();
+                }
+            }
+            
             CreateHostBuilder(args).Build().Run();
         }
 
