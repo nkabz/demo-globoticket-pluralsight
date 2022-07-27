@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using GloboTicket.TicketManagement.Application.Features.Categories.Commands.CreateCategory;
 using GloboTicket.TicketManagement.Application.Features.Categories.Queries.GetCategoriesList;
@@ -26,8 +24,8 @@ namespace GloboTicket.TicketManagement.Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<List<CategoryListVm>>> GetAllCategories()
         {
-            var dtos = await _mediator.Send(new GetCategoriesListQuery());
-            return Ok(dtos);
+            var DTOs = await _mediator.Send(new GetCategoriesListQuery());
+            return Ok(DTOs);
         }       
         
         [HttpGet("allwithevents", Name = "GetCategoriesWithEvents")]

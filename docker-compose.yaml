@@ -8,6 +8,8 @@ services:
       target: development
     ports:
       - "8080:80"
+    volumes:
+      - ./:/app
     networks:
       - local-dev-network
   database:
