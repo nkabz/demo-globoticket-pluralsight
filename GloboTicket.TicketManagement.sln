@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagemen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Api", "GloboTicket.TicketManagement.Api\GloboTicket.TicketManagement.Api.csproj", "{C5E8E6F7-0A48-4FE2-A2CA-C7FB553552E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Application.UnitTests", "GloboTicket.TicketManagement.Application.UnitTests\GloboTicket.TicketManagement.Application.UnitTests.csproj", "{743D6488-DD45-457D-8A64-565A3F9D8041}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Persistence.IntegrationTests", "GloboTicket.TicketManagement.Persistence.IntegrationTests\GloboTicket.TicketManagement.Persistence.IntegrationTests.csproj", "{6A85340D-211F-4510-BC51-6BE9C636DFD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,8 @@ Global
 		{D257006F-C5AE-4677-ABB5-8E2B647080A9} = {0A1040F0-7015-4752-93C5-C85DE7768746}
 		{C548E1C9-296F-4F6F-8B02-B1412C0FDE39} = {885E43CD-D624-46C0-AEA9-5F4C2964396F}
 		{C5E8E6F7-0A48-4FE2-A2CA-C7FB553552E9} = {1C3C846F-6F5A-4D81-9677-692AF354B9F5}
+		{743D6488-DD45-457D-8A64-565A3F9D8041} = {481050C9-35E2-497A-8557-85B23E9F304A}
+		{6A85340D-211F-4510-BC51-6BE9C636DFD9} = {481050C9-35E2-497A-8557-85B23E9F304A}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BCEF6645-D910-4C2A-B4B6-E442DEBE9D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -109,5 +115,29 @@ Global
 		{C5E8E6F7-0A48-4FE2-A2CA-C7FB553552E9}.Release|x64.Build.0 = Release|Any CPU
 		{C5E8E6F7-0A48-4FE2-A2CA-C7FB553552E9}.Release|x86.ActiveCfg = Release|Any CPU
 		{C5E8E6F7-0A48-4FE2-A2CA-C7FB553552E9}.Release|x86.Build.0 = Release|Any CPU
+		{743D6488-DD45-457D-8A64-565A3F9D8041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{743D6488-DD45-457D-8A64-565A3F9D8041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{743D6488-DD45-457D-8A64-565A3F9D8041}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{743D6488-DD45-457D-8A64-565A3F9D8041}.Debug|x64.Build.0 = Debug|Any CPU
+		{743D6488-DD45-457D-8A64-565A3F9D8041}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{743D6488-DD45-457D-8A64-565A3F9D8041}.Debug|x86.Build.0 = Debug|Any CPU
+		{743D6488-DD45-457D-8A64-565A3F9D8041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{743D6488-DD45-457D-8A64-565A3F9D8041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{743D6488-DD45-457D-8A64-565A3F9D8041}.Release|x64.ActiveCfg = Release|Any CPU
+		{743D6488-DD45-457D-8A64-565A3F9D8041}.Release|x64.Build.0 = Release|Any CPU
+		{743D6488-DD45-457D-8A64-565A3F9D8041}.Release|x86.ActiveCfg = Release|Any CPU
+		{743D6488-DD45-457D-8A64-565A3F9D8041}.Release|x86.Build.0 = Release|Any CPU
+		{6A85340D-211F-4510-BC51-6BE9C636DFD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A85340D-211F-4510-BC51-6BE9C636DFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A85340D-211F-4510-BC51-6BE9C636DFD9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6A85340D-211F-4510-BC51-6BE9C636DFD9}.Debug|x64.Build.0 = Debug|Any CPU
+		{6A85340D-211F-4510-BC51-6BE9C636DFD9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6A85340D-211F-4510-BC51-6BE9C636DFD9}.Debug|x86.Build.0 = Debug|Any CPU
+		{6A85340D-211F-4510-BC51-6BE9C636DFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A85340D-211F-4510-BC51-6BE9C636DFD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A85340D-211F-4510-BC51-6BE9C636DFD9}.Release|x64.ActiveCfg = Release|Any CPU
+		{6A85340D-211F-4510-BC51-6BE9C636DFD9}.Release|x64.Build.0 = Release|Any CPU
+		{6A85340D-211F-4510-BC51-6BE9C636DFD9}.Release|x86.ActiveCfg = Release|Any CPU
+		{6A85340D-211F-4510-BC51-6BE9C636DFD9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

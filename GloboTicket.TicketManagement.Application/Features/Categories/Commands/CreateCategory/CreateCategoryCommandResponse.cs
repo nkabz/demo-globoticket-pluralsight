@@ -1,3 +1,4 @@
+using GloboTicket.TicketManagement.Application.Features.Events.Queries.GetEventDetail;
 using GloboTicket.TicketManagement.Application.Responses;
 
 namespace GloboTicket.TicketManagement.Application.Features.Categories.Commands.CreateCategory
